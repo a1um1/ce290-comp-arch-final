@@ -6,4 +6,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   base: "/ce290-comp-arch/",
   plugins: [react(), tailwindcss()],
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: "[name].js",
+        chunkFileNames: "[name].js",
+        assetFileNames: "assets/[name][extname]",
+      },
+    },
+  },
 });
