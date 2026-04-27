@@ -34,7 +34,7 @@ export default function MainDecoder_table() {
             <th>Type</th>
             <th>Name</th>
             <th className="bg-purple-300">Op</th>
-            <th className="bg-purple-300">Op[6:3]</th>
+            <th className="bg-purple-300">Op[6:2]</th>
             <th className="bg-red-300">ALUSrc</th>
             <th className="bg-green-300">ImmSrc</th>
             <th className="bg-purple-300">RegWrite</th>
@@ -52,9 +52,7 @@ export default function MainDecoder_table() {
               <td>{inst.type}</td>
               <td>{inst.name}</td>
               <td className="bg-purple-100">{inst.op}</td>
-              <td className="bg-purple-100">
-                {inst.op6_3.toString(2).padStart(4, "0").slice(0, 4)}
-              </td>
+              <td className="bg-purple-100">{inst.op6_2.toString(2).padStart(5, "0")}</td>
               <td className="bg-red-100">{inst.aluSrc ?? "x"}</td>
               <td className="bg-green-100">{inst.immSrc ?? "x"}</td>
               <td className="bg-purple-100">{inst.regWrite ?? "x"}</td>

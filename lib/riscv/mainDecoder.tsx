@@ -3,7 +3,7 @@ import { create } from "zustand";
 
 export const process_instruction_types = () => {
   return riscv_instruction_types.map((inst) => {
-    const op6_3 = inst.op >> 2;
+    const op6_2 = inst.op >> 2;
     const base = 0b0_000_0_00_0_0_00_0;
     const aluSrc = (inst.aluSrc ?? 0) << 10;
     const immSrc = (inst.immSrc ?? 0) << 7;
@@ -16,7 +16,7 @@ export const process_instruction_types = () => {
       base | aluSrc | immSrc | regWrite | resultSrc | memWrite | (ALUOp.result << 1) | branch;
     return {
       ...inst,
-      op6_3,
+      op6_2,
       value,
       ALUOpType: ALUOp.result,
       isDependOnFunct3: "depend_on_funct3" in ALUOp && ALUOp.depend_on_funct3,
