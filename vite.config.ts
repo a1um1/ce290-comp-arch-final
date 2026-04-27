@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/ce290-comp-arch/",
+  base: "/ce290-comp-arch-final/",
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
