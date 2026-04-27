@@ -205,6 +205,7 @@ export const riscv_instruction_types: {
     immSrc: 0b11,
     regWrite: 1,
     memWrite: 0,
+    resultSrc: 2,
     ALUOp: "0-000",
     branch: 0,
   },
