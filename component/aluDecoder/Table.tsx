@@ -5,8 +5,8 @@ export default function AluDecoderTable() {
   const { entries } = useAluDecoder();
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">ALU Decoder</h2>
-      <table className="defaultTable font-mono text-center dark:bg-gray-800">
+      <h2 className="text-2xl font-bold mb-4 text-slate-900">ALU Decoder</h2>
+      <table className="defaultTable font-mono text-center">
         <thead>
           <tr>
             <th>ALUOp</th>

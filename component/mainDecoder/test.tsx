@@ -4,8 +4,8 @@ import { testCaseMaker } from "../../lib/testCaseMaker";
 export default function MainDecoder_TestCase() {
   const { mainDecoderData } = useMainDecoder();
   return (
-    <div className="p-4 bg-slate-100 dark:bg-gray-800 rounded-lg border border-slate-200 dark:border-gray-700">
-      <p className="font-semibold text-slate-900 dark:text-white mb-2">Generated Test case</p>
+    <div className="p-4 bg-slate-100 rounded-lg border border-slate-200 ">
+      <p className="font-semibold text-slate-900 mb-2">Generated Test case</p>
       <textarea>
         {testCaseMaker({
           headers: [

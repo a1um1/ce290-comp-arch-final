@@ -6,8 +6,8 @@ export default function MainDecoder_table() {
   const { mainDecoderData } = useMainDecoder();
   return (
     <>
-      <h2 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Main Decoder</h2>
-      <p className="text-slate-600 dark:text-gray-300 mb-4">Hex สำหรับการ Decode จะประกอบด้วย</p>
+      <h2 className="text-2xl font-bold mb-4 text-slate-900 ">Main Decoder</h2>
+      <p className="text-slate-600 mb-4">Hex สำหรับการ Decode จะประกอบด้วย</p>
       <BinaryBlock
         value={[
           { value: "ALUsrc", color: "bg-red-500 text-white" },
@@ -19,7 +19,7 @@ export default function MainDecoder_table() {
           { value: "Branch", color: "bg-blue-500 text-white" },
         ]}
       />
-      <table className="defaultTable font-mono text-center dark:bg-gray-800">
+      <table className="defaultTable font-mono text-center ">
         <thead>
           <tr>
             <th colSpan={2}></th>
